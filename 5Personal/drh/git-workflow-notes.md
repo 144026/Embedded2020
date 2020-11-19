@@ -18,6 +18,7 @@ git remote add $remote
 git push -u $remote $localbranch # set up remote refs(same name)
 git branch -u $remote/$branch # push to a different remote ref
 git config --global push.default upstream
+git push $remote --delete $branch
 git push -v
 git pull -v
 ```
