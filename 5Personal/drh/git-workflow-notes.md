@@ -23,5 +23,5 @@ git config --global push.default upstream
 
 git push -u $remote $localbranch # for new branch, set up remote refs(same name)
 git push $remote --delete $branch
-git push -v
+git push $remote_repo [+<src_ref>:<dst_ref>]
 ```
